@@ -5,11 +5,11 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from dec import *
 from webdriver_manager.chrome import ChromeDriverManager
-'''email = input("Enter the email: ")
+email = input("Enter the email: ")
 password = input("Enter the password: ")
 theory = int(input("Enter the number of theory subjects: "))
 labs = int(input("Enter the number of lab subjects: "))
-comment = input("Enter the comment: ")'''
+comment = input("Enter the comment: ")
 browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 browser.get("https://academia.srmist.edu.in/#Course_Feedback")
 for keys in email:
